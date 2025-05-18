@@ -5,6 +5,13 @@
   <title>Investonium</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    :root {
+      --primary-color: #205c20;
+      --primary-dark: #174417;
+      --bg-color: #f4f6f5;
+      --text-color: #222;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -13,28 +20,53 @@
 
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 4rem 1rem;
+      background: var(--bg-color);
+      color: var(--text-color);
       min-height: 100vh;
     }
 
-    .container {
+    header {
       background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo img {
+      height: 40px;
+      width: auto;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--primary-dark);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 4rem auto;
+      background: white;
+      padding: 2.5rem;
       border-radius: 16px;
-      padding: 2rem;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      max-width: 600px;
-      width: 100%;
       text-align: center;
     }
 
     h1 {
       font-size: 2.5rem;
-      color: #0066cc;
+      color: var(--primary-color);
       margin-bottom: 1rem;
     }
 
@@ -46,7 +78,7 @@
 
     .button {
       display: inline-block;
-      background-color: #0066cc;
+      background-color: var(--primary-color);
       color: white;
       padding: 0.75rem 1.5rem;
       border-radius: 8px;
@@ -56,15 +88,67 @@
     }
 
     .button:hover {
-      background-color: #004999;
+      background-color: var(--primary-dark);
+    }
+
+    .socials {
+      margin-top: 2rem;
+    }
+
+    .socials a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        margin-left: 1rem;
+        font-size: 0.95rem;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+
+  <header>
+    <a href="#" class="logo">
+      <img src="logo.png" alt="Investonium Logo">
+    </a>
+    <nav>
+      <a href="#">Start</a>
+      <a href="#">Über mich</a>
+      <a href="#">Kontakt</a>
+    </nav>
+  </header>
+
+  <main class="container">
     <h1>Willkommen bei Investonium</h1>
-    <p>Dies ist die Seite von Investonium, Ihre Anlageberatung für Ersteinsteiger!</p>
+    <p>
+      Schön, dass du hier bist! Dies ist meine persönliche Webseite.  
+      In Kürze findest du hier mehr über meine Projekte, Ideen und Kontaktmöglichkeiten.
+    </p>
     <a href="#" class="button">Mehr erfahren</a>
-  </div>
+
+    <div class="socials">
+      <a href="https://github.com/investonium" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/deinprofil" target="_blank">LinkedIn</a>
+      <a href="mailto:kontakt@investonium.de">E-Mail</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Investonium – Alle Rechte vorbehalten.
+  </footer>
+
 </body>
 </html>
+
