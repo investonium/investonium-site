@@ -1,154 +1,75 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Investonium</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    :root {
-      --primary-color: #205c20;
-      --primary-dark: #174417;
-      --bg-color: #f4f6f5;
-      --text-color: #222;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: var(--bg-color);
-      color: var(--text-color);
-      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0f2f1f; /* dunkelgrüner Hintergrund */
+      color: #ffffff;
     }
 
     header {
-      background: white;
+      background-color: #1b4d2e; /* etwas heller als Hintergrund */
       display: flex;
-      justify-content: space-between;
       align-items: center;
       padding: 1rem 2rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
 
     .logo img {
-      height: 40px;
-      width: auto;
+      height: 50px;
+      margin-right: 1rem;
     }
 
-    nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
-      color: var(--primary-color);
-      font-weight: 500;
-      transition: color 0.2s;
+    .title {
+      font-size: 1.8rem;
+      font-weight: bold;
     }
 
-    nav a:hover {
-      color: var(--primary-dark);
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 4rem auto;
-      background: white;
-      padding: 2.5rem;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    main {
+      padding: 2rem;
       text-align: center;
     }
 
     h1 {
-      font-size: 2.5rem;
-      color: var(--primary-color);
-      margin-bottom: 1rem;
+      color: #a8e6a3; /* hellgrün für Kontrast */
     }
 
     p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 2rem;
-    }
-
-    .button {
-      display: inline-block;
-      background-color: var(--primary-color);
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-
-    .button:hover {
-      background-color: var(--primary-dark);
-    }
-
-    .socials {
-      margin-top: 2rem;
-    }
-
-    .socials a {
-      margin: 0 0.5rem;
-      text-decoration: none;
-      color: var(--primary-color);
-      font-weight: bold;
+      font-size: 1.2rem;
+      color: #e0ffe0;
     }
 
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-
-    @media (max-width: 600px) {
-      nav a {
-        margin-left: 1rem;
-        font-size: 0.95rem;
-      }
+      padding: 1rem;
+      background-color: #1b4d2e;
+      color: #a0d8a0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
   </style>
 </head>
 <body>
-
   <header>
     <a href="#" class="logo">
       <img src="logo.png" alt="Investonium Logo">
     </a>
-    <nav>
-      <a href="#">Start</a>
-      <a href="#">Über mich</a>
-      <a href="#">Kontakt</a>
-    </nav>
+    <div class="title">Investonium</div>
   </header>
 
-  <main class="container">
-    <h1>Willkommen bei Investonium</h1>
-    <p>Dies ist die Seite von Investonium, Ihre unverbindliche Anlageberatung für Ersteinsteiger.
-    </p>
-    <a href="#" class="button">Mehr erfahren</a>
-
-    <div class="socials">
-      <a href="
-https://www.tiktok.com/@lnvestonium
-" target="_blank">TikTok</a>
-      <a href="www.linkedin.com/in/investonium-anlageberatung-ab74a0366" target="_blank">LinkedIn</a>
-      <a href="mailto:investonium.sha@gmail.com">E-Mail</a>
-    </div>
+  <main>
+    <h1>Willkommen auf meiner Website!</h1>
+    <p>Diese Seite wurde mit HTML erstellt und mit GitHub Pages veröffentlicht.</p>
   </main>
 
   <footer>
     &copy; 2025 Investonium – Alle Rechte vorbehalten.
   </footer>
-
 </body>
 </html>
 
