@@ -10,6 +10,7 @@
       --primary-dark: #174417;
       --bg-color: #f4f6f5;
       --text-color: #222;
+      --accent-color: #b08d57; /* edles Gold-Braun */
     }
 
     * {
@@ -42,6 +43,13 @@
       width: auto;
     }
 
+    .slogan {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--accent-color);
+      margin-left: 1rem;
+    }
+    
     nav a {
       margin-left: 1.5rem;
       text-decoration: none;
@@ -120,9 +128,12 @@
 <body>
 
   <header>
-    <a href="#" class="logo">
-      <img src="logo.png" alt="Investonium Logo">
-    </a>
+    <div style="display: flex; align-items: center;">
+      <a href="#" class="logo">
+        <img src="logo.png" alt="Investonium Logo">
+      </a>
+      <span class="slogan">Investieren beginnt mit Verstehen</span>span>
+    </div> 
     <nav>
       <a href="#">Start</a>
       <a href="#">Über mich</a>
